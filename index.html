@@ -5,51 +5,65 @@
     <meta name="viewport"
       content="width=device-width, initial-scale=1">
     <title>Thai Thien Duy – Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>
-  <nav>
-    <a href="#about">Giới thiệu</a>
-    <a href="#Skill">Chiêu Thức</a>
-    <a href="#contact">Liên hệ</a>
+  <header class="site-header">
+  <a class="logo" href="#">MLBB</a>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="#about">Giới thiệu</a></li>
+      <li><a href="#Skill">Dự án</a></li>
+      <li><a href="#contact">Liên hệ</a></li>
+    </ul>
   </nav>
-</header>
-<main>
-  <section id="about">
-    <h1>Hanzo</h1>
-    <p>Hanzo từng là một ninja thiên tài nhưng đầy tham vọng của gia tộc Nhẫn giả Sát Quỷ (Akakage). Bị mờ mắt bởi khao khát sức mạnh tột cùng, hắn đã phản bội lại chính gia tộc của mình để đánh cắp thanh quỷ kiếm Ame no Habakiri.</p>
-    <p>Không dừng lại ở đó, Hanzo còn phong ấn và dung hợp với một Huyết Quỷ (Demon Pneuma) vào cơ thể. Giờ đây, hắn trở thành một ác quỷ vô tình, lang thang khắp nơi để hấp thụ linh hồn của những kẻ yếu hơn nhằm nuôi dưỡng thanh kiếm của mình.</p>
+  </header>
+<main class="container">
+  <section id="about" class="hero">
+    <div>
+      <h1>Hanzo</h1>
+      <p>Hanzo từng là một ninja thiên tài nhưng đầy tham vọng của gia tộc Nhẫn giả Sát Quỷ (Akakage). Bị mờ mắt bởi khao khát sức mạnh tột cùng, hắn đã phản bội lại chính gia tộc của mình để đánh cắp thanh quỷ kiếm Ame no Habakiri.</p>
+      <p>Không dừng lại ở đó, Hanzo còn phong ấn và dung hợp với một Huyết Quỷ (Demon Pneuma) vào cơ thể. Giờ đây, hắn trở thành một ác quỷ vô tình, lang thang khắp nơi để hấp thụ linh hồn của những kẻ yếu hơn nhằm nuôi dưỡng thanh kiếm của mình.</p>
+    </div>
     <img src="images.jpg" alt="Hanzo">
   </section>
   <section id="Skill">
   <h2>Skill</h2>
-  <article>
+  <div class="projects">
+  <article class="card">
     <h3>Chiêu Thức 1</h3>
     <p>Đây là kỹ năng giúp Hanzo trở thành "vua cướp rừng". Sau khi đánh thường đủ 5 nhát, Hanzo có thể kích hoạt chiêu này để nuốt chửng ngay lập tức một con quái rừng (kể cả bùa xanh/đỏ) hoặc lính mà không cần trừng phạt. Việc nuốt quái cũng giúp hắn hồi một lượng lớn Máu Quỷ.</p>
   </article>
-  <article>
+  <article class="card">
     <h3>Chiêu Thức 2</h3>
     <p>Hanzo triệu hồi một vòng gai nhọn hình tròn đâm liên tục lên mặt đất. Kẻ địch đứng trong đó sẽ bị sát thương, làm chậm và mỗi lần đâm trúng sẽ giúp Hanzo tăng thêm Máu Quỷ.</p>
   </article>
-    <article>
+  <article class="card">
     <h3>Chiêu Thức 3</h3>
     <p>Hanzo bỏ lại thể xác thật của mình ở vị trí hiện tại và biến thành một Bóng Ma Huyết Quỷ lao về phía trước. Bóng ma này được tăng tốc chạy, tăng tốc đánh và có thể đi xuyên tường. Bóng ma sẽ duy trì bằng cách đốt dần thanh Máu Quỷ.</p>
   </article>
+  </div>
 </section>
 <section id="contact">
   <h2>Liên hệ</h2>
-  <form>
+<form>
+  <div class="field">
     <label for="name">Họ tên</label>
     <input id="name" name="name" required>
+  </div>
+  <div class="field">
     <label for="email">Email</label>
     <input id="email" type="email"
            name="email" required>
+  </div>
+  <div class="field">
     <label for="msg">Lời nhắn</label>
     <textarea id="msg" name="msg"></textarea>
-    <button>Gửi</button>
-  </form>
+  </div>
+  <button class="button">Gửi</button>
+</form>
 </section>
 </main>
-<footer>© 2026 Thái Thiên Duy</footer>
+<footer class="container">© 2026 Thái Thiên Duy</footer>
   </body>
 </html>
