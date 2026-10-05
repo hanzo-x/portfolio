@@ -1,0 +1,794 @@
+<!doctype html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>Thái Thiên Duy (Thai Thien Duy) | Mechatronics &amp; Robotics Intern – CV</title>
+  <meta name="description" content="CV trực tuyến của Thái Thiên Duy, sinh viên năm tư ngành Vật lý Kỹ thuật tại HCMUS (ĐHQG-HCM), đang tìm cơ hội thực tập Mechatronics &amp; Robotics: tích hợp robotics và tự động hóa, thiết kế cơ khí, điều khiển nhúng.">
+  <meta name="author" content="Thái Thiên Duy">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f4f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#070f1d" media="(prefers-color-scheme: dark)">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:title" content="Thái Thiên Duy | Mechatronics &amp; Robotics Intern">
+  <meta property="og:description" content="Sinh viên năm tư Vật lý Kỹ thuật (chuyên ngành Vật lý – Tin học) tại HCMUS. Tích hợp robotics và tự động hóa, thiết kế cơ khí, điều khiển nhúng.">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232457e6'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-weight='700' font-size='27' text-anchor='middle' fill='white'%3ETD%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cv.css">
+
+  <!-- Chọn giao diện sáng/tối đã lưu (hoặc theo hệ thống) ngay trước khi vẽ trang, để không bị nháy trắng khi dùng chế độ tối -->
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add("js");
+      var theme = null;
+      try { theme = localStorage.getItem("td-theme"); } catch (e) {}
+      if (theme !== "light" && theme !== "dark") {
+        theme = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      root.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <script src="cv.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Thái Thiên Duy",
+    "alternateName": "Thai Thien Duy",
+    "jobTitle": "Sinh viên Vật lý Kỹ thuật – Mechatronics & Robotics Intern",
+    "alumniOf": "Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM (HCMUS)",
+    "knowsAbout": ["Robotics", "Thiết kế cơ khí", "SolidWorks", "Hệ thống nhúng", "ESP32", "C/C++", "MATLAB/Simulink", "Proteus", "Điều khiển PID", "Điều khiển trượt mờ thích nghi (AFSMC)", "Grasshopper Optimization Algorithm (GOA)", "Particle Swarm Optimization (PSO)", "STM32", "PLC", "Machine Vision"]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Bộ icon SVG: mọi icon trong trang đều được gọi bằng use href="#ten-icon" -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-cube" viewBox="0 0 24 24"><path d="M12 2.5 3.5 7v10l8.5 4.5 8.5-4.5V7L12 2.5Z"/><path d="m3.5 7 8.5 4.5L20.5 7M12 11.5v10"/></symbol>
+      <symbol id="i-ruler" viewBox="0 0 24 24"><path d="M3 17 17 3l4 4L7 21l-4-4Z"/><path d="m7 13 2 2M10 10l2 2M13 7l2 2"/></symbol>
+      <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></symbol>
+      <symbol id="i-wave" viewBox="0 0 24 24"><path d="M3 20h18M3 4v16"/><path d="M5 14c2.5-9 4.5-9 7 0s4.5 9 7 0"/></symbol>
+      <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M3 7h9M16 7h5M3 17h5M12 17h9"/><circle cx="14" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></symbol>
+      <symbol id="i-circuit" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M11 9h4a2 2 0 0 0 2-2V3"/><circle cx="9" cy="9" r="2"/><path d="M7 21v-4a2 2 0 0 1 2-2h4"/><circle cx="15" cy="15" r="2"/></symbol>
+      <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.6"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="8.1" stroke-width="3" stroke-dasharray="3 3.36"/></symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7l-5-5Z"/><path d="M14 2v5h5M9 17v-3M12 17v-5M15 17v-2"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></symbol>
+      <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></symbol>
+      <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5.5 9.5A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-2.5L14 9V3"/><path d="M7.5 15h9"/></symbol>
+      <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5 5-2Z"/></symbol>
+      <symbol id="i-grad" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5M22 9v6"/></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 7 5-3 5 3-1.5-7"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6.5L20.5 7"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Bỏ qua, đến nội dung chính</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <!-- ===================== THANH ĐẦU TRANG ===================== -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Thái Thiên Duy – về đầu trang">
+        <span class="brand-mark" aria-hidden="true">TD</span>
+        <span class="brand-name">Thái Thiên Duy</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Menu chính">
+        <ul>
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#skills">Kỹ năng</a></li>
+          <li><a href="#projects">Đồ án</a></li>
+          <li><a href="#foundation">Nền tảng</a></li>
+          <li><a href="#education">Học vấn</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-pressed="false" aria-label="Chuyển sang chế độ tối" title="Đổi giao diện sáng / tối">
+          <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+          <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Mở menu">
+          <svg class="icon icon-open" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icon icon-shut" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== PERSONA (khối giới thiệu đầu trang) ===================== -->
+    <section class="persona" aria-labelledby="persona-title">
+      <div class="persona-bg" aria-hidden="true"><span class="glow glow-a"></span><span class="glow glow-b"></span></div>
+
+      <div class="container persona-grid">
+        <div class="persona-copy">
+          <p class="pill reveal"><span class="pulse-dot" aria-hidden="true"></span>Đang tìm cơ hội thực tập · Mechatronics &amp; Robotics</p>
+
+          <p class="eyebrow reveal">Sinh viên Vật lý Kỹ thuật</p>
+          <h1 id="persona-title" class="reveal">Thái Thiên Duy</h1>
+          <p class="persona-role reveal">Mechatronics &amp; Robotics Intern</p>
+
+          <ul class="persona-tags reveal" aria-label="Lĩnh vực trọng tâm">
+            <li>Tích hợp Robotics &amp; Tự động hóa</li>
+            <li>Thiết kế cơ khí</li>
+            <li>Điều khiển nhúng</li>
+          </ul>
+
+          <p class="persona-lead reveal">
+            Sinh viên năm tư ngành Vật lý Kỹ thuật (chuyên ngành Vật lý – Tin học) tại Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM,
+            tập trung vào hệ thống robot ứng dụng, tự động hóa công nghiệp và điều khiển nhúng.
+          </p>
+
+          <!-- Chỉ hiện khi in / lưu PDF -->
+          <p class="print-school">Sinh viên năm tư · Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM</p>
+          <p class="print-contact">thaithienduy5@gmail.com &nbsp;·&nbsp; 0961 558 154</p>
+
+          <div class="persona-cta reveal">
+            <a class="btn btn-primary" href="#projects">Xem đồ án <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost" href="#contact">Liên hệ</a>
+            <button class="btn btn-text" type="button" data-print>
+              <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> Lưu CV dạng PDF
+            </button>
+          </div>
+        </div>
+
+        <div class="persona-visual reveal">
+          <figure class="portrait">
+            <span class="portrait-orbit" aria-hidden="true"></span>
+            <div class="portrait-frame">
+              <span class="portrait-fallback" aria-hidden="true">TD</span>
+              <img src="images/avatar.jpg" alt="Ảnh chân dung Thái Thiên Duy" width="960" height="1200" fetchpriority="high" decoding="async">
+            </div>
+            <span class="float-chip chip-a"><svg class="icon" aria-hidden="true"><use href="#i-cube"/></svg>SolidWorks</span>
+            <span class="float-chip chip-b"><svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg>ESP32 · C/C++</span>
+            <span class="float-chip chip-c"><svg class="icon" aria-hidden="true"><use href="#i-wave"/></svg>MATLAB/Simulink</span>
+          </figure>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="stats reveal" aria-label="Điểm nổi bật">
+          <li><strong>8.1<small>/10</small></strong><span>GPA, tương đương 3.49/4.0</span></li>
+          <li><strong>4 đồ án</strong><span>Từ robot 6-DOF đến mạch số và trang trại mô phỏng ESP32</span></li>
+          <li><strong>AFSMC · GOA</strong><span>Điều khiển trượt mờ thích nghi, tối ưu thông số bằng thuật toán châu chấu</span></li>
+          <li><strong>STM32 · ESP32</strong><span>Lập trình C/C++ và tích hợp phần cứng nhúng</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== GIỚI THIỆU ===================== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-label">01 · About</p>
+          <h2 id="about-title">Mục tiêu nghề nghiệp</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="lead">
+              Sinh viên năm tư ngành Vật lý Kỹ thuật, chuyên ngành <strong>Vật lý – Tin học</strong>, đang tìm cơ hội thực tập trong lĩnh vực
+              <strong>Mechatronics, Robotics, Điều khiển và Hệ thống nhúng</strong>.
+            </p>
+            <p>
+              Luôn có động lực ứng dụng vật lý, lập trình, thiết kế cơ khí, cảm biến, cơ cấu chấp hành, lập trình nhúng
+              và mô phỏng MATLAB/Simulink vào các hệ thống robot và tự động hóa thực tế.
+            </p>
+
+            <ul class="chip-row" aria-label="Kiến thức và kỹ năng áp dụng">
+              <li>Vật lý</li>
+              <li>Lập trình</li>
+              <li>Thiết kế cơ khí</li>
+              <li>Cảm biến</li>
+              <li>Cơ cấu chấp hành</li>
+              <li>Lập trình nhúng</li>
+              <li>Mô phỏng MATLAB/Simulink</li>
+            </ul>
+          </div>
+
+          <aside class="focus-card reveal" aria-label="Vị trí thực tập mong muốn và lĩnh vực quan tâm">
+            <div class="focus-block">
+              <h3><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg>Vị trí thực tập</h3>
+              <ul>
+                <li>Thực tập sinh Mechatronics &amp; Robotics</li>
+                <li>Tích hợp Robotics &amp; tự động hóa</li>
+                <li>Thiết kế cơ khí cho tự động hóa</li>
+              </ul>
+            </div>
+            <div class="focus-block">
+              <h3><svg class="icon" aria-hidden="true"><use href="#i-compass"/></svg>Định hướng nghề nghiệp</h3>
+              <ul>
+                <li>Hệ thống robot ứng dụng thực tế</li>
+                <li>Thiết kế và tích hợp tự động hóa công nghiệp</li>
+                <li>Hệ thống điều khiển nhúng</li>
+              </ul>
+            </div>
+            <div class="focus-block">
+              <h3><svg class="icon" aria-hidden="true"><use href="#i-flask"/></svg>Lĩnh vực quan tâm</h3>
+              <p>Robot ứng dụng, thiết kế máy, lập trình nhúng và hệ thống điều khiển.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== KỸ NĂNG ===================== -->
+    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-label">02 · Skills</p>
+          <h2 id="skills-title">Kỹ năng chuyên môn</h2>
+          <p class="section-intro">Các công cụ và phương pháp dùng trong robot và tự động hóa. Chọn một thẻ để xem công cụ đó là gì và được áp dụng như thế nào.</p>
+        </header>
+
+        <!--
+          ẢNH: mỗi thẻ hiển thị ảnh nằm trong thẻ <img> (file WebP đã thu nhỏ trong thư mục images, khoảng 200 KB mỗi ảnh).
+          Tên file cho biết đó là ảnh gì (theo thứ tự các thẻ):
+            images/solidworks.webp  SolidWorks: robot và bản lắp ráp cơ khí cắt lớp
+            images/autocad.webp     AutoCAD: mô hình xoắn 3D và các bản vẽ kỹ thuật
+            images/arduino.webp     Arduino · C/C++: bo mạch Arduino Uno và đoạn mã
+            images/matlab.webp      MATLAB/Simulink: cỗ máy robot màu xanh và đồ thị
+            images/control.webp     Hệ thống điều khiển: sơ đồ vòng kín PID trong phòng thí nghiệm
+            images/proteus.webp     Proteus: bo mạch in và các đồ thị mô phỏng
+            images/hardware.webp    Cảm biến, cơ cấu chấp hành và động cơ: động cơ bước, servo, cảm biến, bảng mạch thử
+            images/vision.webp      Machine Vision: camera kiểm tra sản phẩm trên băng chuyền
+            images/office.webp      MS Office: Word, Excel, PowerPoint, Outlook, Teams
+          Nếu thiếu file ảnh, thẻ tự hiện một khung biểu tượng gọn gàng nên trang không bị lỗi.
+          Muốn đổi ảnh, chỉ cần thay file trong thư mục images (giữ nguyên tên) hoặc sửa tên file trong src="".
+        -->
+        <div class="skill-grid">
+
+          <article class="skill-card reveal">
+            <div class="skill-media" data-icon="i-cube">
+              <svg class="skill-icon" aria-hidden="true"><use href="#i-cube"/></svg>
+              <img src="images/solidworks.webp" alt="Minh họa robot cùng bản lắp ráp cơ khí cắt lớp và logo SolidWorks" loading="lazy" decoding="async">
+            </div>
+            <div class="skill-body">
+              <p class="skill-kind">Thiết kế cơ khí</p>
+              <h3>SolidWorks</h3>
+              <div class="skill-foot">
+                <span></span>
+                <button class="skill-btn" type="button" data-skill="solidworks" aria-haspopup="dialog">Xem chi tiết<span class="sr-only"> về SolidWorks</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-media" data-icon="i-ruler">
+              <svg class="skill-icon" aria-hidden="true"><use href="#i-ruler"/></svg>
+              <img src="images/autocad.webp" alt="Minh họa mô hình xoắn ba chiều màu đỏ cùng các bản vẽ kỹ thuật và chữ AutoCAD" loading="lazy" decoding="async">
+            </div>
+            <div class="skill-body">
+              <p class="skill-kind">Bản vẽ kỹ thuật</p>
+              <h3>AutoCAD</h3>
+              <div class="skill-foot">
+                <span class="badge">Cơ bản</span>
+                <button class="skill-btn" type="button" data-skill="autocad" aria-haspopup="dialog">Xem chi tiết<span class="sr-only"> về AutoCAD</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-media" data-icon="i-cpu">
+              <svg class="skill-icon" aria-hidden="true"><use href="#i-cpu"/></svg>
+              <img src="images/arduino.webp" alt="Minh họa bo mạch Arduino Uno cùng các đoạn mã C/C++" loading="lazy" decoding="async">
+            </div>
+            <div class="skill-body">
+              <p class="skill-kind">Lập trình nhúng</p>
+              <h3>Arduino · C/C++</h3>
+              <div class="skill-foot">
+                <span></span>
+                <button class="skill-btn" type="button" data-skill="arduino" aria-haspopup="dialog">Xem chi tiết<span class="sr-only"> về Arduino và C/C++</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-media" data-icon="i-wave">
+              <svg class="skill-icon" aria-hidden="true"><use href="#i-wave"/></svg>
+              <img src="images/matlab.webp" alt="Minh họa cỗ máy robot màu xanh bên cạnh biển hiệu MATLAB" loading="lazy" decoding="async">
+            </div>
+            <div class="skill-body">
+              <p class="skill-kind">Mô hình hóa &amp; mô phỏng</p>
+              <h3>MATLAB/Simulink</h3>
+              <div class="skill-foot">
+                <span class="badge">Cơ bản</span>
+                <button class="skill-btn" type="button" data-skill="matlab" aria-haspopup="dialog">Xem chi tiết<span class="sr-only"> về MATLAB và Simulink</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-media" data-icon="i-sliders">
+              <svg class="skill-icon" aria-hidden="true"><use href="#i-sliders"/></svg>
+              <img src="images/control.webp" alt="Minh họa hệ thống điều khiển vòng kín với bộ điều khiển PID, cảm biến và cánh tay robot trong phòng thí nghiệm" loading="lazy" decoding="async">
+            </div>
+            <div class="skill-body">
+              <p class="skill-kind">PID &amp; SMC</p>
+              <h3>Hệ thống điều khiển</h3>
+              <div class="skill-foot">
+                <span></span>
+                <button class="skill-btn" type="button" data-skill="control" aria-haspopup="dialog">Xem chi tiết<span class="sr-only"> về hệ thống điều khiển</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-media" data-icon="i-circuit">
+              <svg class="skill-icon" aria-hidden="true"><use href="#i-circuit"/></svg>
+              <img src="images/proteus.webp" alt="Minh họa bo mạch in cùng chữ Proteus và các đồ thị mô phỏng" loading="lazy" decoding="async">
+            </div>
+            <div class="skill-body">
+              <p class="skill-kind">Mô phỏng mạch điện</p>
+              <h3>Proteus</h3>
+              <div class="skill-foot">
+                <span class="badge">Cơ bản</span>
+                <button class="skill-btn" type="button" data-skill="proteus" aria-haspopup="dialog">Xem chi tiết<span class="sr-only"> về Proteus</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-media" data-icon="i-gear">
+              <svg class="skill-icon" aria-hidden="true"><use href="#i-gear"/></svg>
+              <img src="images/hardware.webp" alt="Minh họa động cơ bước, động cơ servo, cảm biến siêu âm và bảng mạch thử cùng chữ Hardware &amp; IoT" loading="lazy" decoding="async">
+            </div>
+            <div class="skill-body">
+              <p class="skill-kind">Tích hợp phần cứng</p>
+              <h3>Cảm biến, cơ cấu chấp hành &amp; động cơ</h3>
+              <div class="skill-foot">
+                <span class="badge">Cơ bản</span>
+                <button class="skill-btn" type="button" data-skill="hardware" aria-haspopup="dialog">Xem chi tiết<span class="sr-only"> về cảm biến, cơ cấu chấp hành và động cơ</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-media" data-icon="i-eye">
+              <svg class="skill-icon" aria-hidden="true"><use href="#i-eye"/></svg>
+              <img src="images/vision.webp" alt="Minh họa camera kiểm tra chất lượng sản phẩm trên băng chuyền" loading="lazy" decoding="async">
+            </div>
+            <div class="skill-body">
+              <p class="skill-kind">Xử lý ảnh</p>
+              <h3>Machine Vision</h3>
+              <div class="skill-foot">
+                <span class="badge">Cơ bản</span>
+                <button class="skill-btn" type="button" data-skill="vision" aria-haspopup="dialog">Xem chi tiết<span class="sr-only"> về Machine Vision</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-media" data-icon="i-doc">
+              <svg class="skill-icon" aria-hidden="true"><use href="#i-doc"/></svg>
+              <img src="images/office.webp" alt="Minh họa bộ Microsoft Office gồm Word, Excel, PowerPoint, Outlook và Teams" loading="lazy" decoding="async">
+            </div>
+            <div class="skill-body">
+              <p class="skill-kind">Tài liệu kỹ thuật</p>
+              <h3>MS Office &amp; Báo cáo kỹ thuật</h3>
+              <div class="skill-foot">
+                <span></span>
+                <button class="skill-btn" type="button" data-skill="office" aria-haspopup="dialog">Xem chi tiết<span class="sr-only"> về MS Office và báo cáo kỹ thuật</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Cửa sổ chi tiết dùng chung cho mọi thẻ kỹ năng (nội dung do cv.js điền vào) -->
+    <dialog class="skill-dialog" id="skill-dialog" aria-labelledby="skill-title">
+      <div class="dialog-panel">
+        <button class="icon-btn dialog-close" id="skill-close" type="button" aria-label="Đóng cửa sổ chi tiết" autofocus><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+
+        <div class="skill-media dialog-media" id="skill-media">
+          <svg class="skill-icon" aria-hidden="true"><use id="skill-icon-use" href="#i-cube"/></svg>
+          <img id="skill-image" alt="" hidden>
+        </div>
+
+        <div class="dialog-body">
+          <p class="skill-kind" id="skill-kind"></p>
+          <div class="dialog-title-row">
+            <h2 id="skill-title"></h2>
+            <span class="badge" id="skill-level" hidden>Cơ bản</span>
+          </div>
+
+          <h3>Đây là gì?</h3>
+          <p id="skill-what"></p>
+
+          <h3>Cách áp dụng</h3>
+          <p id="skill-how"></p>
+
+          <ul class="chip-row" id="skill-tags" aria-label="Từ khóa liên quan"></ul>
+        </div>
+
+        <div class="dialog-nav">
+          <button class="btn btn-ghost btn-sm" id="skill-prev" type="button"><svg class="icon flip" aria-hidden="true"><use href="#i-arrow"/></svg><span>Trước</span></button>
+          <span class="dialog-count" id="skill-count" aria-live="polite"></span>
+          <button class="btn btn-ghost btn-sm" id="skill-next" type="button"><span>Tiếp</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- ===================== ĐỒ ÁN ===================== -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-label">03 · Projects</p>
+          <h2 id="projects-title">Đồ án &amp; kinh nghiệm học thuật</h2>
+          <p class="section-intro">Bốn đồ án tiêu biểu, đi từ robot 6 bậc tự do đến lập trình nhúng, mạch số và tối ưu bộ điều khiển PID.</p>
+        </header>
+
+        <!-- Đồ án nổi bật: robot 6-DOF -->
+        <article class="project">
+          <figure class="project-visual reveal">
+            <div class="visual-stage" id="project-stage">
+
+              <!-- Hình minh họa được vẽ bằng code. Thêm file images/robot-arm.png (ảnh thật hoặc ảnh render) là nó tự thay cho hình vẽ này. -->
+              <svg class="arm-svg" viewBox="0 0 480 290" role="img" aria-label="Hình minh họa robot sáu khớp do chip STM32 điều khiển, đang gắp hộp trên băng chuyền do PLC điều khiển">
+                <defs>
+                  <pattern id="arm-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" class="arm-gridline"/></pattern>
+                </defs>
+                <rect width="480" height="290" fill="url(#arm-grid)"/>
+
+                <!-- đường tín hiệu: STM32 → robot, PLC → băng chuyền -->
+                <path class="signal" d="M53 68V215H72"/>
+                <path class="signal" d="M446 70V232"/>
+
+                <!-- chip STM32 -->
+                <path class="chip-pin" d="M36 22v6M53 22v6M70 22v6M36 62v6M70 62v6M18 38h6M18 52h6M82 38h6M82 52h6"/>
+                <rect class="chip-body" x="24" y="28" width="58" height="34" rx="6"/>
+                <text class="chip-label" x="53" y="49">STM32</text>
+
+                <!-- PLC -->
+                <rect class="chip-body" x="392" y="22" width="64" height="48" rx="6"/>
+                <text class="chip-label" x="424" y="42">PLC</text>
+                <circle class="led l1" cx="406" cy="57" r="3.2"/><circle class="led l2" cx="424" cy="57" r="3.2"/><circle class="led l3" cx="442" cy="57" r="3.2"/>
+
+                <!-- sàn, băng chuyền và các hộp trên băng chuyền -->
+                <rect class="arm-table" x="16" y="260" width="450" height="10" rx="5"/>
+                <rect class="belt-leg" x="292" y="248" width="8" height="12"/><rect class="belt-leg" x="432" y="248" width="8" height="12"/>
+                <rect class="belt" x="262" y="232" width="206" height="16" rx="8"/>
+                <line class="belt-track" x1="276" y1="240" x2="454" y2="240"/>
+                <circle class="roller" cx="270" cy="240" r="8"/><circle class="roller" cx="460" cy="240" r="8"/>
+                <circle class="joint-pin" cx="270" cy="240" r="2.6"/><circle class="joint-pin" cx="460" cy="240" r="2.6"/>
+                <rect class="cube c1" x="288" y="204" width="28" height="28" rx="4"/><rect class="cube-top" x="288" y="204" width="28" height="8" rx="4"/>
+                <rect class="cube c2" x="346" y="204" width="28" height="28" rx="4"/><rect class="cube-top" x="346" y="204" width="28" height="8" rx="4"/>
+                <rect class="cube c3" x="410" y="204" width="28" height="28" rx="4"/><rect class="cube-top" x="410" y="204" width="28" height="8" rx="4"/>
+
+                <!-- đế robot (khớp 1: xoay quanh trục đứng) -->
+                <polygon class="arm-base" points="52,260 64,228 132,228 144,260"/>
+                <rect class="arm-base" x="72" y="202" width="52" height="26" rx="8"/>
+                <ellipse class="joint-band" cx="98" cy="228" rx="36" ry="7"/>
+                <circle class="jnum" cx="158" cy="224" r="8"/><text class="jtext" x="158" y="227.5">1</text>
+
+                <!-- cánh tay: vai (khớp 2) → khuỷu (khớp 3) → cổ tay (khớp 5); khớp 4 và 6 là hai vòng xoay quanh trục của thanh -->
+                <g class="arm-a">
+                  <line class="link-outer" x1="98" y1="196" x2="168" y2="84"/>
+                  <line class="link-inner" x1="98" y1="196" x2="168" y2="84"/>
+                  <line class="link-axis"  x1="98" y1="196" x2="168" y2="84"/>
+
+                  <g class="arm-b">
+                    <line class="link-outer" x1="168" y1="84" x2="292" y2="60"/>
+                    <line class="link-inner" x1="168" y1="84" x2="292" y2="60"/>
+                    <line class="link-axis"  x1="168" y1="84" x2="292" y2="60"/>
+                    <rect class="joint-band" x="240.5" y="52" width="9" height="34" rx="3" transform="rotate(-11 245 69)"/>
+                    <circle class="jnum" cx="245" cy="36" r="8"/><text class="jtext" x="245" y="39.5">4</text>
+
+                    <g class="arm-c">
+                      <line class="link-outer" x1="292" y1="60" x2="358" y2="164"/>
+                      <line class="link-inner" x1="292" y1="60" x2="358" y2="164"/>
+                      <line class="link-axis"  x1="292" y1="60" x2="358" y2="164"/>
+                      <rect class="joint-band" x="344.5" y="132.4" width="9" height="34" rx="3" transform="rotate(57.6 349 149.4)"/>
+                      <rect class="arm-grip-bar" x="338" y="162" width="40" height="9" rx="3"/>
+                      <path class="arm-grip" d="M341 171v16h8M375 171v16h-8"/>
+                      <circle class="jnum" cx="380" cy="140" r="8"/><text class="jtext" x="380" y="143.5">6</text>
+                    </g>
+
+                    <circle class="joint-ring" cx="292" cy="60" r="12"/><circle class="joint-pin" cx="292" cy="60" r="4.5"/>
+                    <circle class="jnum" cx="308" cy="36" r="8"/><text class="jtext" x="308" y="39.5">5</text>
+                  </g>
+
+                  <circle class="joint-ring" cx="168" cy="84" r="13"/><circle class="joint-pin" cx="168" cy="84" r="4.5"/>
+                  <circle class="jnum" cx="144" cy="64" r="8"/><text class="jtext" x="144" y="67.5">3</text>
+                </g>
+
+                <circle class="joint-ring" cx="98" cy="196" r="15"/><circle class="joint-pin" cx="98" cy="196" r="5.5"/>
+                <circle class="jnum" cx="74" cy="176" r="8"/><text class="jtext" x="74" y="179.5">2</text>
+              </svg>
+
+              <img class="visual-photo" src="images/robot-arm.png" alt="Đồ án robot 6-DOF kết hợp băng chuyền" loading="lazy" decoding="async">
+            </div>
+            <figcaption class="visual-caption">
+              <span class="caption-concept">Hình minh họa: STM32 điều khiển robot 6-DOF, PLC điều khiển băng chuyền.</span>
+              <span class="caption-photo">Đồ án robot 6-DOF kết hợp băng chuyền.</span>
+            </figcaption>
+          </figure>
+
+          <div class="project-content">
+            <div class="project-head reveal">
+              <span class="badge badge-accent">Đồ án học thuật</span>
+              <h3>6-DOF Robot Arm Control with AFSMC and Grasshopper Optimization</h3>
+              <p class="project-summary">
+                Mô phỏng robot 6 bậc tự do (6-DOF) với thuật toán điều khiển trượt mờ thích nghi (AFSMC), dùng thuật toán tối ưu châu chấu (GOA)
+                để tìm bộ thông số tối ưu, sau đó áp dụng vào thiết kế thực tế: STM32 điều khiển robot, PLC điều khiển băng chuyền và các khâu tự động hóa khác.
+              </p>
+              <ul class="chip-row" aria-label="Công nghệ sử dụng">
+                <li>6-DOF Robot</li>
+                <li>AFSMC</li>
+                <li>GOA</li>
+                <li>STM32</li>
+                <li>PLC</li>
+                <li>Băng chuyền</li>
+              </ul>
+            </div>
+
+            <ol class="work-list">
+              <li class="work-item reveal">
+                <span class="work-icon" aria-hidden="true"><svg class="icon"><use href="#i-cube"/></svg></span>
+                <div>
+                  <h4>6-DOF Robot Simulation</h4>
+                  <p>Dựng mô hình và mô phỏng robot 6 bậc tự do để kiểm chứng thuật toán điều khiển trước khi áp dụng vào thiết kế thực tế.</p>
+                </div>
+              </li>
+              <li class="work-item reveal">
+                <span class="work-icon" aria-hidden="true"><svg class="icon"><use href="#i-sliders"/></svg></span>
+                <div>
+                  <h4>AFSMC Controller</h4>
+                  <p>Điều khiển trượt mờ thích nghi (Adaptive Fuzzy Sliding Mode Control): kết hợp điều khiển trượt với logic mờ để thông số điều khiển tự thích nghi theo trạng thái của hệ thống.</p>
+                </div>
+              </li>
+              <li class="work-item reveal">
+                <span class="work-icon" aria-hidden="true"><svg class="icon"><use href="#i-target"/></svg></span>
+                <div>
+                  <h4>Grasshopper Optimization (GOA)</h4>
+                  <p>Thuật toán tối ưu châu chấu (Grasshopper Optimization Algorithm) tự động tìm kiếm bộ thông số tối ưu cho bộ điều khiển.</p>
+                </div>
+              </li>
+              <li class="work-item reveal">
+                <span class="work-icon" aria-hidden="true"><svg class="icon"><use href="#i-cpu"/></svg></span>
+                <div>
+                  <h4>STM32 Robot Control</h4>
+                  <p>Vi điều khiển STM32 đảm nhiệm điều khiển robot 6 bậc tự do trong thiết kế thực tế.</p>
+                </div>
+              </li>
+              <li class="work-item reveal">
+                <span class="work-icon" aria-hidden="true"><svg class="icon"><use href="#i-gear"/></svg></span>
+                <div>
+                  <h4>PLC Automation</h4>
+                  <p>PLC điều khiển băng chuyền và các khâu tự động hóa khác trong hệ thống.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </article>
+
+        <!-- Các đồ án khác: thẻ gọn, thêm đồ án mới bằng cách copy nguyên một <article class="mini-card"> -->
+        <div class="more-projects">
+          <div class="more-head reveal">
+            <h3>Các đồ án khác</h3>
+          </div>
+
+          <div class="mini-grid">
+            <article class="mini-card reveal">
+              <div class="mini-top">
+                <span class="mini-icon" aria-hidden="true"><svg class="icon"><use href="#i-cpu"/></svg></span>
+                <span class="mini-no" aria-hidden="true">02</span>
+              </div>
+              <p class="mini-kind">Lập trình · ESP32</p>
+              <h4>ESP32 Smart Farm Simulation: Temperature &amp; Fan Control</h4>
+              <p>
+                Đồ án lập trình mô phỏng nhiệt độ kết hợp quạt, sau đó thiết lập phần cứng cho một trang trại mô phỏng chạy trên ESP32.
+                Hệ thống đọc nhiệt độ, độ ẩm (DHT11) và chất lượng không khí (MQ135), tự động bật/tắt quạt khi nhiệt độ vượt ngưỡng
+                và cảnh báo khi khí độc tăng cao.
+              </p>
+              <ul class="chip-row" aria-label="Công nghệ sử dụng">
+                <li>ESP32</li>
+                <li>DHT11</li>
+                <li>MQ135</li>
+                <li>Điều khiển quạt</li>
+              </ul>
+            </article>
+
+            <article class="mini-card reveal">
+              <div class="mini-top">
+                <span class="mini-icon" aria-hidden="true"><svg class="icon"><use href="#i-circuit"/></svg></span>
+                <span class="mini-no" aria-hidden="true">03</span>
+              </div>
+              <p class="mini-kind">Hệ thống số · Proteus</p>
+              <h4>Push-Button Lock Circuit Designed Entirely with ICs</h4>
+              <p>
+                Đồ án môn Hệ Thống Số: thiết kế mạch điện tử khóa nút hoàn toàn bằng IC và mô phỏng trên Proteus.
+              </p>
+              <ul class="chip-row" aria-label="Công nghệ sử dụng">
+                <li>Proteus</li>
+                <li>IC số</li>
+                <li>Mạch khóa nút</li>
+                <li>Mô phỏng mạch</li>
+              </ul>
+            </article>
+
+            <article class="mini-card reveal">
+              <div class="mini-top">
+                <span class="mini-icon" aria-hidden="true"><svg class="icon"><use href="#i-sliders"/></svg></span>
+                <span class="mini-no" aria-hidden="true">04</span>
+              </div>
+              <p class="mini-kind">Điều khiển · C++</p>
+              <h4>PID Tuning with Particle Swarm Optimization (PSO)</h4>
+              <p>
+                Dùng thuật toán tối ưu bầy đàn PSO tự động dò tìm Kp, Ki, Kd cho bộ điều khiển PID
+                của một hệ thống điều khiển nhiệt độ mô phỏng, hướng tới sai số xác lập nhỏ và thời gian ổn định nhanh.
+                Mô hình, PID và PSO được cài đặt bằng C++ để so sánh đáp ứng trước và sau khi tối ưu.
+              </p>
+              <ul class="chip-row" aria-label="Công nghệ sử dụng">
+                <li>PSO</li>
+                <li>PID</li>
+                <li>C++</li>
+                <li>Tối ưu hóa</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== NỀN TẢNG KỸ THUẬT ===================== -->
+    <section class="section section-alt" id="foundation" aria-labelledby="foundation-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-label">04 · Foundation</p>
+          <h2 id="foundation-title">Nền tảng kỹ thuật liên quan</h2>
+        </header>
+
+        <div class="found-grid">
+          <article class="found-card reveal">
+            <span class="found-icon" aria-hidden="true"><svg class="icon"><use href="#i-wave"/></svg></span>
+            <h3>Mô hình hóa &amp; phân tích hệ thống</h3>
+            <p>Nền tảng phân tích vững chắc về vật lý và mô hình hóa hệ thống, giúp hiểu sâu động lực học của các hệ thống cơ khí, điện và điều khiển.</p>
+          </article>
+
+          <article class="found-card reveal">
+            <span class="found-icon" aria-hidden="true"><svg class="icon"><use href="#i-cpu"/></svg></span>
+            <h3>Hệ thống nhúng &amp; thiết kế hệ thống</h3>
+            <p>Thành thạo lập trình nhúng và thiết kế hệ thống, sẵn sàng phát triển các ứng dụng điều khiển thực tế cho robot và tự động hóa công nghiệp.</p>
+          </article>
+
+          <article class="found-card reveal">
+            <span class="found-icon" aria-hidden="true"><svg class="icon"><use href="#i-layers"/></svg></span>
+            <h3>Tích hợp phần&nbsp;cứng&nbsp;– phần&nbsp;mềm</h3>
+            <p>Chú trọng cách tiếp cận theo đồ án, trực tiếp tích hợp các chi tiết cơ khí, cảm biến, cơ cấu chấp hành và bộ điều khiển để xây dựng hệ thống cơ điện hoàn chỉnh.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HỌC VẤN ===================== -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-label">05 · Education</p>
+          <h2 id="education-title">Học vấn &amp; chứng chỉ</h2>
+        </header>
+
+        <div class="edu-grid">
+          <article class="edu-card reveal">
+            <div class="edu-main">
+              <span class="edu-icon" aria-hidden="true"><svg class="icon"><use href="#i-grad"/></svg></span>
+              <div>
+                <p class="edu-kicker">Học vấn</p>
+                <h3>Trường Đại học Khoa học Tự&nbsp;nhiên<span class="edu-sub">ĐHQG-HCM (HCMUS)</span></h3>
+                <p class="edu-degree">Chương trình Cử nhân ngành Vật lý Kỹ thuật</p>
+                <ul class="chip-row">
+                  <li>Chuyên ngành: Vật lý – Tin học</li>
+                  <li>Năm học: Năm tư</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="gpa" role="group" aria-label="GPA 8.1 trên thang 10.0, tương đương 3.49 trên thang 4.0">
+              <div class="gpa-ring" data-gpa="81" aria-hidden="true"><span><strong>8.1</strong><small>/ 10.0</small></span></div>
+              <p><strong>GPA</strong><span>Tương đương 3.49 / 4.0</span></p>
+            </div>
+          </article>
+
+          <div class="cred-stack">
+            <article class="cred-card reveal">
+              <span class="cred-icon" aria-hidden="true"><svg class="icon"><use href="#i-award"/></svg></span>
+              <div>
+                <h3>Chứng chỉ</h3>
+                <p>Automotive Machine Design Certificate – Misumi</p>
+              </div>
+            </article>
+
+            <article class="cred-card reveal">
+              <span class="cred-icon" aria-hidden="true"><svg class="icon"><use href="#i-globe"/></svg></span>
+              <div>
+                <h3>Ngoại ngữ</h3>
+                <ul class="lang-list">
+                  <li><span>Tiếng Việt</span><strong>Bản ngữ</strong></li>
+                  <li><span>Tiếng Anh</span><strong>Cơ bản đến trung cấp</strong></li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LIÊN HỆ ===================== -->
+    <section class="section section-contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-copy">
+            <p class="section-label">06 · Contact</p>
+            <h2 id="contact-title">Cùng trao đổi về cơ hội thực tập</h2>
+            <p>Sẵn sàng đón nhận các cơ hội thực tập trong lĩnh vực Mechatronics, Robotics, Điều khiển và Hệ thống nhúng.</p>
+          </div>
+
+          <ul class="contact-list">
+            <li class="contact-item">
+              <span class="contact-icon" aria-hidden="true"><svg class="icon"><use href="#i-mail"/></svg></span>
+              <div class="contact-text">
+                <span class="contact-label">Email</span>
+                <a href="mailto:thaithienduy5@gmail.com">thaithienduy5@gmail.com</a>
+              </div>
+              <button class="copy-btn" type="button" data-copy="thaithienduy5@gmail.com" data-label="email" aria-label="Sao chép email">
+                <svg class="icon icon-copy" aria-hidden="true"><use href="#i-copy"/></svg>
+                <svg class="icon icon-done" aria-hidden="true"><use href="#i-check"/></svg>
+              </button>
+            </li>
+
+            <li class="contact-item">
+              <span class="contact-icon" aria-hidden="true"><svg class="icon"><use href="#i-phone"/></svg></span>
+              <div class="contact-text">
+                <span class="contact-label">Điện thoại</span>
+                <a href="tel:+84961558154">0961 558 154</a>
+              </div>
+              <button class="copy-btn" type="button" data-copy="0961558154" data-label="số điện thoại" aria-label="Sao chép số điện thoại">
+                <svg class="icon icon-copy" aria-hidden="true"><use href="#i-copy"/></svg>
+                <svg class="icon icon-done" aria-hidden="true"><use href="#i-check"/></svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== CHÂN TRANG ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Thái Thiên Duy · Sinh viên Vật lý Kỹ thuật, HCMUS (ĐHQG-HCM)</p>
+      <a class="to-top" href="#top">Lên đầu trang <svg class="icon" aria-hidden="true"><use href="#i-up"/></svg></a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
